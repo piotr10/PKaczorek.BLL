@@ -1,9 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace PKaczorek.BL
 {
     public class PKlientRepository
     {
+        private AdresRepository adresRepository { get; set; } //ta właściwośc i konstruktor pod spodem PKlientRepository przechowują adresy w KlientRepository
+
+        public PKlientRepository()
+        {
+            adresRepository = new AdresRepository();
+        }
+
        /// <summary>
         /// Pobieramy jednego klienta
         /// </summary>
@@ -13,6 +21,7 @@ namespace PKaczorek.BL
         {
             //Tworzymy istancje klasy klienta
             PKlient klient = new PKlient(klientId);
+            klient.ListaAdresow = adresRepository.PobierzPoKlientId(klientId).ToList();
 
             //kod koóry pobiera określonego klienta z bazy danych
 

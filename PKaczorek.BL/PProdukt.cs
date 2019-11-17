@@ -15,7 +15,7 @@ namespace PKaczorek.BLTest
 
         public PProdukt(int produktId)
         {
-            produktId = produktId;
+            ProduktId = produktId;
         }
 
         #endregion

@@ -14,7 +14,7 @@ namespace PKaczorek.BLTest
 
         public PZamowienie(int zamowienieId)
         {
-            zamowienieId = ZamowienieId;
+            ZamowienieId = zamowienieId;
         }
         #endregion
 

@@ -8,16 +8,17 @@ namespace PKaczorek.BL
     {
         #region Konstruktory
 
-        public PKlient()
+        public PKlient() : this(0)
         {
             
         }
 
-        public PKlient(int klient)
+        public PKlient(int klientid)
         {
-            klient = KlientId;
+            KlientId = klientid;
+            ListaAdresow = new List<PAdres>();
         }
-
+        
         #endregion
 
         #region Właściwości
@@ -40,7 +41,6 @@ namespace PKaczorek.BL
         public string Imie { get; set; }
         public string Email { get; set; }
         public int KlientId { get; private set; }
-
         public string ImieNazwisko
         {
             get
@@ -57,6 +57,7 @@ namespace PKaczorek.BL
                 return imieNazwisko;
             }
         }
+        public List<PAdres> ListaAdresow { get; set; }
 
         #endregion
      
