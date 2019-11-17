@@ -26,7 +26,20 @@ namespace PKaczorek.BL
 
         public string ImieNazwisko
         {
-            get { return Imie + ", " + Nazwisko; }
+            get
+            {
+                string imieNazwisko = Imie;
+                if (!string.IsNullOrWhiteSpace(Nazwisko))
+                {
+                    if (!string.IsNullOrWhiteSpace(imieNazwisko)) // ! - jeżeli nie jest 
+                    {
+                        imieNazwisko += ", ";
+                    }
+
+                    imieNazwisko += Nazwisko;
+                }
+                return imieNazwisko;
+            }
         }
 
         #endregion
