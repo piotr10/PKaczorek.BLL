@@ -23,6 +23,10 @@ namespace PKaczorek.BLTest
         public int ZamowienieId { get; private set; }
         public DateTimeOffset? DataZamowinia { get; set; }
 
+        public List<PPozycjaZamowienia> pozycjaZamowienia { get; set; }
+        public int KlientId { get; set; }
+        public int AdresDostawyId { get; set; }
+
         #endregion
 
         #region Metody

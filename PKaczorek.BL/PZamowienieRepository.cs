@@ -40,7 +40,60 @@ namespace PKaczorek.BL
         /// <returns></returns>
         public bool Zapisz()
         {
+            //kod ktory zapisuje zdefinowane zamowienie
             return true;
+        }
+
+        /// <summary>
+        /// pobieramy jedno zmaowienie do wyswietlenia
+        /// </summary>
+        /// <param name="zamowienieId"></param>
+        /// <returns></returns>
+        public PWyswietlanieZamowienia PobierzZamowienieDoWyswietlenia(int zamowienieId)
+        {
+            PWyswietlanieZamowienia wyswietlanieZamowienia = new PWyswietlanieZamowienia();
+
+            // kod ktory pobiera zdefinowane pola zamowienia z bazy danych
+
+            //tymczasowo zakodowane dane na stale
+            if (zamowienieId == 10)
+            {
+                wyswietlanieZamowienia.Imie = "jacek";
+                wyswietlanieZamowienia.Nazwisko = "bury";
+                wyswietlanieZamowienia.DataZamowienia = new DateTimeOffset(2019, 12, 12, 12, 00, 00, new TimeSpan(5,0,0));
+                wyswietlanieZamowienia.AdresDostawy = new PAdres()
+                {
+                    AdresTyp = 2,
+                    Ulica = "mila",
+                    Miasto = "eloszka",
+                    Kraj = "polska",
+                    KodPocztowy = "12-123"
+                };
+                wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista = new List<WyswietlaniePozycjiZamowienia>();
+
+                //kod ktory pobiera elementy zamowenia
+
+                //dane zakodowane na stałe
+                if (zamowienieId ==10)
+                {
+                    var wyswietlaniePozycjiZamowienia = new WyswietlaniePozycjiZamowienia()
+                    {
+                        NazwaProduktu = "stol",
+                        CenaZakupu = 123.5M,
+                        Ilosc = 5
+                    };
+                    wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista.Add(wyswietlaniePozycjiZamowienia);
+
+                    wyswietlaniePozycjiZamowienia = new WyswietlaniePozycjiZamowienia()
+                    {
+                        NazwaProduktu = "blat",
+                        CenaZakupu = 1232.5M,
+                        Ilosc = 7
+                    };
+                    wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista.Add(wyswietlaniePozycjiZamowienia);
+                }
+            }
+            return wyswietlanieZamowienia;
         }
     }
 }

@@ -23,7 +23,7 @@ namespace PKaczorek.BLTest
         #region Właściwości
 
         public int ProduktId { get; private set; }
-        public Decimal? AktualnaCena  { get; set; }
+        public decimal? AktualnaCena  { get; set; }
         public string opis { get; set; }
         public string NazwaProduktu { get; set; }
 
