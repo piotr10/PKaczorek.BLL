@@ -76,15 +76,7 @@ namespace PKaczorek.BL
             }
             return poprawne;
         }
-        /// <summary>
-        /// metoda ta zapisuje kliena
-        /// </summary>
-        /// <returns></returns>
-        public bool Zapisz()
-        {
-            return true;
-        }
-
+       
         /// <summary>
         /// Pobieramy jednego klienta
         /// </summary>
@@ -104,7 +96,14 @@ namespace PKaczorek.BL
             return new List<PKlient>();
         }
 
-
+        /// <summary>
+        /// metoda ta zapisuje kliena
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz()
+        {
+            return true;
+        }
         #endregion
 
     }

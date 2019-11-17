@@ -41,6 +41,7 @@ namespace PKaczorek.BLTest
             }
             return poprawne;
         }
+
         /// <summary>
         /// metoda ta zapisuje zamowienie
         /// </summary>
