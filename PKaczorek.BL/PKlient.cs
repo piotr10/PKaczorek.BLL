@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace PKaczorek.BL
@@ -6,6 +7,8 @@ namespace PKaczorek.BL
     public class PKlient
     {
         #region Właściwości
+
+        public static int licznik { get; set; }
         private string _nazwisko;
         public string  Nazwisko
         {
@@ -35,7 +38,6 @@ namespace PKaczorek.BL
                     {
                         imieNazwisko += ", ";
                     }
-
                     imieNazwisko += Nazwisko;
                 }
                 return imieNazwisko;
@@ -43,13 +45,60 @@ namespace PKaczorek.BL
         }
 
         #endregion
+     
 
         #region Konstruktory
+
+
 
         #endregion
 
         #region Metody
 
+        public bool Zwaliduj()
+        {
+            var poprawne = true;
+
+            if (string.IsNullOrWhiteSpace(Nazwisko))
+            {
+                poprawne = false;
+            }
+            if (string.IsNullOrWhiteSpace(Email))
+            {
+                poprawne = false;
+            }
+            return poprawne;
+        }
+        /// <summary>
+        /// metoda ta zapisuje kliena
+        /// </summary>
+        /// <returns></returns>
+        public bool Zapisz()
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// Pobieramy jednego klienta
+        /// </summary>
+        /// <param name="klientId"></param>
+        /// <returns></returns>
+        public PKlient Pobierz(int klientId)
+        {
+            return new PKlient();
+        }
+
+        /// <summary>
+        /// kod pobiera wszystkich klientów
+        /// </summary>
+        /// <returns></returns>
+        public List<PKlient> Pobierz()
+        {
+            return new List<PKlient>();
+        }
+
+
         #endregion
+
     }
 }

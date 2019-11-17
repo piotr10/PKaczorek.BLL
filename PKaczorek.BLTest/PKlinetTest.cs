@@ -29,6 +29,7 @@ namespace PKaczorek.BLTest
             Assert.AreEqual(oczekiwana, aktualna);
 
         }
+
         [TestMethod]
         public void ImiePusteTest()
         {
@@ -50,6 +51,7 @@ namespace PKaczorek.BLTest
             Assert.AreEqual(oczekiwana, aktualna);
 
         }
+
         [TestMethod]
         public void NazwiskoPusteTest()
         {
@@ -71,6 +73,79 @@ namespace PKaczorek.BLTest
             Assert.AreEqual(oczekiwana, aktualna);
 
         }
+
+        [TestMethod]
+        public void StaticTest()
+        {
+            var kl1 = new PKlient();
+            kl1.Imie = "jacek";
+            PKlient.licznik += 1;
+
+            var kl2 = new PKlient();
+            kl2.Imie = "maciek";
+            PKlient.licznik += 1;
+
+            var kl3 = new PKlient();
+            kl3.Imie = "mkirek";
+            PKlient.licznik += 1;
+
+            Assert.AreEqual(3, PKlient.licznik);
+
+        }
+
+        [TestMethod]
+        public void ZwalidujTest()
+        {
+            //arrange - przygotuj test
+            PKlient klient = new PKlient();
+            klient.Nazwisko = "Czerski";
+            klient.Email = "piotr@wp.pl";
+            var oczekiwana = true;
+
+            //act - działaj
+            var aktualna = klient.Zwaliduj();
+
+            //assert - spr test
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
+
+        [TestMethod]
+        public void ZwalidujBrakNazwiskaTest()
+        {
+            //arrange - przygotuj test
+            PKlient klient = new PKlient();
+           
+            klient.Email = "piotr@wp.pl";
+            var oczekiwana = false;
+
+            //act - działaj
+            var aktualna = klient.Zwaliduj();
+
+            //assert - spr test
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
+
+        [TestMethod]
+        public void ZwalidujBrakEmailTest()
+        {
+            //arrange - przygotuj test
+            PKlient klient = new PKlient();
+            klient.Nazwisko = "Czerski";
+            
+            var oczekiwana = false;
+
+            //act - działaj
+            var aktualna = klient.Zwaliduj();
+
+            //assert - spr test
+            Assert.AreEqual(oczekiwana, aktualna);
+        }
+
+        
+        //arrange - przygotuj test
+        //act - działaj
+        //assert - spr test
+
 
     }
 }
