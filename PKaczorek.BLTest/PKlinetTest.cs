@@ -79,17 +79,17 @@ namespace PKaczorek.BLTest
         {
             var kl1 = new PKlient();
             kl1.Imie = "jacek";
-            PKlient.licznik += 1;
+            PKlient.Licznik += 1;
 
             var kl2 = new PKlient();
             kl2.Imie = "maciek";
-            PKlient.licznik += 1;
+            PKlient.Licznik += 1;
 
             var kl3 = new PKlient();
             kl3.Imie = "mkirek";
-            PKlient.licznik += 1;
+            PKlient.Licznik += 1;
 
-            Assert.AreEqual(3, PKlient.licznik);
+            Assert.AreEqual(3, PKlient.Licznik);
 
         }
 

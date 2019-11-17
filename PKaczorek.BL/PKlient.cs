@@ -6,9 +6,23 @@ namespace PKaczorek.BL
 {
     public class PKlient
     {
+        #region Konstruktory
+
+        public PKlient()
+        {
+            
+        }
+
+        public PKlient(int klient)
+        {
+            klient = KlientId;
+        }
+
+        #endregion
+
         #region Właściwości
 
-        public static int licznik { get; set; }
+        public static int Licznik { get; set; }
         private string _nazwisko;
         public string  Nazwisko
         {
@@ -46,13 +60,6 @@ namespace PKaczorek.BL
 
         #endregion
      
-
-        #region Konstruktory
-
-
-
-        #endregion
-
         #region Metody
 
         public bool Zwaliduj()
