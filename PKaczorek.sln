@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{93D430B6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKaczorek.BLTest", "PKaczorek.BLTest\PKaczorek.BLTest.csproj", "{E01D347A-2AE6-4D32-8456-5DCCBAC03E14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C5690BA3-3665-4560-B4C8-BD4877F7DF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTest", "CommonTest\CommonTest.csproj", "{6367BD7F-128F-4706-A9E0-4497F4BBC99A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{E01D347A-2AE6-4D32-8456-5DCCBAC03E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E01D347A-2AE6-4D32-8456-5DCCBAC03E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E01D347A-2AE6-4D32-8456-5DCCBAC03E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5690BA3-3665-4560-B4C8-BD4877F7DF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5690BA3-3665-4560-B4C8-BD4877F7DF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5690BA3-3665-4560-B4C8-BD4877F7DF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5690BA3-3665-4560-B4C8-BD4877F7DF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6367BD7F-128F-4706-A9E0-4497F4BBC99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6367BD7F-128F-4706-A9E0-4497F4BBC99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6367BD7F-128F-4706-A9E0-4497F4BBC99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6367BD7F-128F-4706-A9E0-4497F4BBC99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E01D347A-2AE6-4D32-8456-5DCCBAC03E14} = {93D430B6-DD48-4920-B351-8AB050C9E4FC}
+		{6367BD7F-128F-4706-A9E0-4497F4BBC99A} = {93D430B6-DD48-4920-B351-8AB050C9E4FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD989438-B195-4870-A416-87A3DA4D0F18}

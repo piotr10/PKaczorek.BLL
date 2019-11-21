@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common;
 using PKaczorek.BL;
 
 namespace PKaczorek.BLTest
@@ -25,7 +26,18 @@ namespace PKaczorek.BLTest
         public int ProduktId { get; private set; }
         public decimal? AktualnaCena  { get; set; }
         public string opis { get; set; }
-        public string NazwaProduktu { get; set; }
+       
+        private string _NazwaProduktu;
+        public string NazwaProduktu
+        {
+            get
+            {
+                var obslugaStringa = new ObslugaStringa();
+                
+                return obslugaStringa.WstawSpacje(_NazwaProduktu);
+            }
+            set { _NazwaProduktu = value; }
+        }
 
         #endregion
 
@@ -82,7 +94,7 @@ namespace PKaczorek.BLTest
         {
             return NazwaProduktu;
         }
-
+        
         #endregion
 
     }

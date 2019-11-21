@@ -38,10 +38,24 @@ namespace PKaczorek.BL
         /// metoda ta zapisuje zamowienie
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(PZamowienie zamowienie)
         {
             //kod ktory zapisuje zdefinowane zamowienie
-            return true;
+            //kod ktory zapisuje zdefiniowany produkt
+            var sukces = true;
+
+            if (zamowienie.MaZmiany && zamowienie.DanePrawidlowe)
+            {
+                if (zamowienie.JestNowy)
+                {
+                    // wywołaj procedure insert
+                }
+                else
+                {
+                    // wywolaj procedure update
+                }
+            }
+            return sukces;
         }
 
         /// <summary>

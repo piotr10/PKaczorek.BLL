@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using PKaczorek.BL;
 
 namespace PKaczorek.BLTest
 {
-    public class PZamowienie
+    public class PZamowienie : KlasaBazowa
     {
         #region Konstruktory
 
@@ -35,7 +36,7 @@ namespace PKaczorek.BLTest
         /// Sprawdza dane zamowienia
         /// </summary>
         /// <returns></returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
             

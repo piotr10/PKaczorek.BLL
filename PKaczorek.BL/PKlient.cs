@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace PKaczorek.BL
 {
-    public class PKlient
+    public class PKlient : KlasaBazowa
     {
         #region Konstruktory
 
@@ -64,7 +64,7 @@ namespace PKaczorek.BL
 
         #region Metody
 
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 

@@ -41,9 +41,23 @@ namespace PKaczorek.BL
         /// metoda ta zapisuje produkt
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(PProdukt produkt)
         {
-            return true;
+            //kod ktory zapisuje zdefiniowany produkt
+            var sukces = true;
+
+            if (produkt.MaZmiany && produkt.DanePrawidlowe)
+            {
+                if (produkt.JestNowy)
+                {
+                    // wywołaj procedure insert
+                }
+                else
+                {
+                    // wywolaj procedure update
+                }
+            }
+            return sukces;
         }
     }
 }

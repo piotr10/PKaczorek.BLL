@@ -49,10 +49,23 @@ namespace PKaczorek.BL
         /// zapisuje klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(PKlient klient)
         {
-            //kod ktory zapisuje zdefiniowanego klienta
-            return true;
+            //kod ktory zapisuje zdefiniowany produkt
+            var sukces = true;
+
+            if (klient.MaZmiany && klient.DanePrawidlowe)
+            {
+                if (klient.JestNowy)
+                {
+                    // wywołaj procedure insert
+                }
+                else
+                {
+                    // wywolaj procedure update
+                }
+            }
+            return sukces;
         }
 
     }
