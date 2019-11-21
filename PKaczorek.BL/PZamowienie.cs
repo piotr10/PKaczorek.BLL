@@ -74,6 +74,10 @@ namespace PKaczorek.BLTest
             return new List<PZamowienie>();
         }
 
+        public override string ToString()
+        {
+            return DataZamowinia.Value.Date + " (" + ZamowienieId + ")";
+        }
 
         #endregion
     }

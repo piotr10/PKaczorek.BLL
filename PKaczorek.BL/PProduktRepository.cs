@@ -14,7 +14,7 @@ namespace PKaczorek.BL
         {
             //tworzenie instancji produktu 
             PProdukt produkt = new PProdukt(produktId);
-
+            
             //kod ktory pobiera tymczasowo okreslony produkt z bazy danych
 
             //tymczasowo zakodowane wartosci aby zwrocic produkt

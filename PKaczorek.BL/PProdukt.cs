@@ -4,7 +4,7 @@ using PKaczorek.BL;
 
 namespace PKaczorek.BLTest
 {
-    public class PProdukt
+    public class PProdukt : KlasaBazowa
     {
         #region Konstruktory
 
@@ -35,7 +35,7 @@ namespace PKaczorek.BLTest
         /// Sprawdza dane produktu
         /// </summary>
         /// <returns></returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -49,6 +49,7 @@ namespace PKaczorek.BLTest
             }
             return poprawne;
         }
+
         /// <summary>
         /// metoda ta zapisuje produkt
         /// </summary>
@@ -77,8 +78,12 @@ namespace PKaczorek.BLTest
             return new List<PProdukt>();
         }
 
+        public override string ToString()
+        {
+            return NazwaProduktu;
+        }
 
         #endregion
-        
+
     }
 }

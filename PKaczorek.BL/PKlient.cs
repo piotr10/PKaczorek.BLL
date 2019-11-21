@@ -22,7 +22,7 @@ namespace PKaczorek.BL
         #endregion
 
         #region Właściwości
-
+        
         public static int Licznik { get; set; }
         private string _nazwisko;
         public string  Nazwisko
@@ -58,9 +58,10 @@ namespace PKaczorek.BL
             }
         }
         public List<PAdres> ListaAdresow { get; set; }
+        public int KlientTyp { get; set; }
 
         #endregion
-     
+
         #region Metody
 
         public bool Zwaliduj()
@@ -105,6 +106,12 @@ namespace PKaczorek.BL
         {
             return true;
         }
+        
+        public override string ToString()
+        {
+            return ImieNazwisko;
+        }
+
         #endregion
 
     }

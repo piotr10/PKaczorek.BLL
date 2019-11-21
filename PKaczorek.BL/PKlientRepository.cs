@@ -45,9 +45,15 @@ namespace PKaczorek.BL
             return new List<PKlient>();
         }
 
+        /// <summary>
+        /// zapisuje klienta
+        /// </summary>
+        /// <returns></returns>
         public bool Zapisz()
         {
+            //kod ktory zapisuje zdefiniowanego klienta
             return true;
         }
+
     }
 }
