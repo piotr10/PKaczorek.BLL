@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Common;
 
 namespace PKaczorek.BL
 {
-    public class PKlient : KlasaBazowa
+    public class PKlient : KlasaBazowa, ILogowanie
     {
         #region Konstruktory
 
@@ -110,6 +111,15 @@ namespace PKaczorek.BL
         public override string ToString()
         {
             return ImieNazwisko;
+        }
+
+        public string Log() //dane ktore beda rejestrowane przez metode Log()
+        {
+            var log = KlientId + ": " + 
+                      ImieNazwisko + " " + 
+                      "Email: " + Email + 
+                      " Status: " + StanObiektu.ToString();
+            return log;
         }
 
         #endregion

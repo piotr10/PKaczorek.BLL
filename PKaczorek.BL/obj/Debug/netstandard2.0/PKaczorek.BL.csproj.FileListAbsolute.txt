@@ -6,3 +6,6 @@ D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\obj\Debug\netstandard2.0\P
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\obj\Debug\netstandard2.0\PKaczorek.BL.dll
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\obj\Debug\netstandard2.0\PKaczorek.BL.pdb
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\obj\Debug\netstandard2.0\PKaczorek.BL.csprojAssemblyReference.cache
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\bin\Debug\netstandard2.0\Common.dll
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\bin\Debug\netstandard2.0\Common.pdb
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BL\obj\Debug\netstandard2.0\PKaczorek.BL.csproj.CopyComplete

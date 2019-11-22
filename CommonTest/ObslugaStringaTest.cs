@@ -13,10 +13,11 @@ namespace CommonTest
             //Arrange
             var zrodlo = "StółOgrodowy";
             var oczekiwana = "Stół Ogrodowy";
-            var obslugaStringa = new ObslugaStringa();
+           //var obslugaStringa = new ObslugaStringa();
 
             //Act;
-            var aktualna = obslugaStringa.WstawSpacje(zrodlo);
+           // var aktualna = ObslugaStringa.WstawSpacje(zrodlo);
+            var aktualna = zrodlo.WstawSpacje(); //metoda rozszerzen
 
             //Assert
             Assert.AreEqual(oczekiwana, aktualna);
@@ -28,11 +29,11 @@ namespace CommonTest
             //Arrange
             var zrodlo = "Stół Ogrodowy";
             var oczekiwana = "Stół Ogrodowy";
-            var obslugaStringa = new ObslugaStringa();
+           // var obslugaStringa = new ObslugaStringa();
 
             //Act;
-            var aktualna = obslugaStringa.WstawSpacje(zrodlo);
-
+           //var aktualna = ObslugaStringa.WstawSpacje(zrodlo);
+            var aktualna = zrodlo.WstawSpacje(); //metoda rozszerzen
             //Assert
             Assert.AreEqual(oczekiwana, aktualna);
         }

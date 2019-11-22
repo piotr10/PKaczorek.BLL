@@ -1,7 +1,6 @@
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\bin\Debug\netstandard2.0\Common.deps.json
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\bin\Debug\netstandard2.0\Common.dll
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\bin\Debug\netstandard2.0\Common.pdb
-D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\Common\obj\Debug\netstandard2.0\Common.dll

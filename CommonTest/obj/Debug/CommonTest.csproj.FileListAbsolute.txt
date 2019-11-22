@@ -16,3 +16,5 @@ D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\obj\Debug\CommonTest.csprojA
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\obj\Debug\CommonTest.csproj.CopyComplete
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\obj\Debug\CommonTest.dll
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\obj\Debug\CommonTest.pdb
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\bin\Debug\PKaczorek.BL.dll
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\CommonTest\bin\Debug\PKaczorek.BL.pdb

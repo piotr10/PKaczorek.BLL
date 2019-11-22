@@ -5,7 +5,7 @@ using PKaczorek.BL;
 
 namespace PKaczorek.BLTest
 {
-    public class PProdukt : KlasaBazowa
+    public class PProdukt : KlasaBazowa, ILogowanie
     {
         #region Konstruktory
 
@@ -32,9 +32,12 @@ namespace PKaczorek.BLTest
         {
             get
             {
-                var obslugaStringa = new ObslugaStringa();
-                
-                return obslugaStringa.WstawSpacje(_NazwaProduktu);
+               //var obslugaStringa = new ObslugaStringa();
+                //return obslugaStringa.WstawSpacje(_NazwaProduktu);
+
+                //return ObslugaStringa.WstawSpacje(_NazwaProduktu); //z klasy static
+
+                return _NazwaProduktu.WstawSpacje(); // metoda rozszerzeń
             }
             set { _NazwaProduktu = value; }
         }
@@ -94,7 +97,15 @@ namespace PKaczorek.BLTest
         {
             return NazwaProduktu;
         }
-        
+        public string Log() //dane ktore beda rejestrowane przez metode Log()
+        {
+            var log = ProduktId + ": " +
+                      NazwaProduktu + " " +
+                      "Opis: " + opis +
+                      " Status: " + StanObiektu.ToString();
+            return log;
+        }
+
         #endregion
 
     }

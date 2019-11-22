@@ -2,9 +2,9 @@
 
 namespace Common
 {
-    public class ObslugaStringa
+    public static class ObslugaStringa // klasa ktora ze zwyklej klasy stala sie - statyczna 
     {
-        public string WstawSpacje(string zrodlo)
+        public static string WstawSpacje(this string zrodlo) // WstawSpacje staje sie metoda rozszerzen - extensions method
         {
             string wynik = string.Empty; //inicjalizacja zmiennej wynik ktora bedzie wartoscia zwracaną
             if (!string.IsNullOrWhiteSpace(zrodlo)) //spr czy ciąg zrodlo zawiera puste znaki 

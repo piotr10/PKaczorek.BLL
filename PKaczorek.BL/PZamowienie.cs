@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common;
 using PKaczorek.BL;
 
 namespace PKaczorek.BLTest
 {
-    public class PZamowienie : KlasaBazowa
+    public class PZamowienie : KlasaBazowa, ILogowanie
     {
         #region Konstruktory
 
@@ -78,6 +79,14 @@ namespace PKaczorek.BLTest
         public override string ToString()
         {
             return DataZamowinia.Value.Date + " (" + ZamowienieId + ")";
+        }
+
+        public string Log()
+        {
+            var log = ZamowienieId + ": " + 
+                      "Data: " + DataZamowinia.Value.Date + " " + 
+                      "Status: " + StanObiektu.ToString();
+            return log;
         }
 
         #endregion

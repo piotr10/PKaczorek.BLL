@@ -16,3 +16,5 @@ D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\obj\Debug\PKaczorek.BL
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\obj\Debug\PKaczorek.BLTest.csproj.CopyComplete
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\obj\Debug\PKaczorek.BLTest.dll
 D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\obj\Debug\PKaczorek.BLTest.pdb
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\bin\Debug\Common.dll
+D:\Projekty_VS\KaczorekPiotrek\PKaczorek\PKaczorek.BLTest\bin\Debug\Common.pdb
