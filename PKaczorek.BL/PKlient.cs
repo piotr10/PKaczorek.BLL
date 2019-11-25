@@ -105,6 +105,7 @@ namespace PKaczorek.BL
         /// <returns></returns>
         public bool Zapisz()
         {
+            Console.WriteLine("elo");
             return true;
         }
         
